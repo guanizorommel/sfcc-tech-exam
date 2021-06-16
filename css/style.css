@@ -6,7 +6,7 @@
 
 /* Typography */
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p{
     font-family: "Times New Roman", sans-serif;
 }
 
@@ -37,7 +37,7 @@ img {
 
 .hero {
     height: auto;
-    background-image: url(img/hero.jpg);
+    background-image: url(../img/hero.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@ img {
 
 .services-left {
     flex: 1 1 50%;
-    background-image: url(img/productimage.jpg);
+    background-image: url(../img/productimage.jpg);
     background-position: left center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ img {
 
 .fixed-image-left {
     flex: 1 1 50%;
-    background-image: url(img/effects1.jpg);
+    background-image: url(../img/effects1.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ img {
 
 .fixed-image-right {
     flex: 1 1 50%;
-    background-image: url(img/effects2.jpg);
+    background-image: url(../img/effects2.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -115,14 +115,16 @@ img {
 
 /*How to Step 1, 2, 3 CSS */
 
-.howto {
-    display: flex;
-    
+.steps-container{
+    display: flex; 
 }
 
 .steps {
+    flex: 1 1 33.33%;
     padding: 2em 2em;
-    border: 3px solid green;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .steps h3 {
@@ -135,4 +137,63 @@ img {
 .steps img {
     width: 100%;
 }
-    
+
+.steps p {
+    text-align: left;
+    line-height: 1.6;
+    background-color: blueviolet;
+    padding: 1em 1em;
+    min-height: 200px;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.titleforsteps h2 {
+    padding: 1em 0em;
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+/*Products Css*/
+.products {
+    display:flex;
+}
+
+.product-cta {
+    flex: 1 1 25%;
+    padding: 2em 4em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 200px;
+}
+
+.product-cta img {
+    width: 100%;
+}
+
+.product-volume {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 1em 2em;
+    background-color: #000000;
+}
