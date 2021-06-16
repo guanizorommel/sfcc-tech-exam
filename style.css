@@ -16,11 +16,11 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 h4, p {
@@ -38,13 +38,13 @@ img {
 .hero {
     height: auto;
     background-image: url(img/hero.jpg);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .hero-content {
-    padding: 10em 0em;
+    padding: 15em 0em;
 }
 
 .hero-content h1 {
@@ -56,5 +56,83 @@ img {
 }
 
 /*Services CSS*/
+.services {
+    display: flex;
+    min-height: 400px;
+    margin: 0 auto;
+}
 
+.services-left {
+    flex: 1 1 50%;
+    background-image: url(img/productimage.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 3px solid red; */
+}
+
+.services-right {
+    flex: 1 1 50%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 3px solid blue; */
+}
+
+.services-right h2 {
+    text-align: center;
+}
+
+.services-right p {
+    text-align: center;
+    margin-top: 2em;
+}
+
+/*Fixed image css*/
+
+.fixed-image {
+    display: flex;
+    min-height: 600px;
+    margin: 0 auto;
+}
+
+.fixed-image-left {
+    flex: 1 1 50%;
+    background-image: url(img/effects1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fixed-image-right {
+    flex: 1 1 50%;
+    background-image: url(img/effects2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*How to Step 1, 2, 3 CSS */
+
+.howto {
+    display: flex;
+    
+}
+
+.steps {
+    padding: 2em 2em;
+    border: 3px solid green;
+}
+
+.steps h3 {
+    text-align: center;
+    color: blue;
+    background-color: blueviolet;
+    padding: .5em 0em;
+}
+
+.steps img {
+    width: 100%;
+}
     
