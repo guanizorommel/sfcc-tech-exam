@@ -55,6 +55,19 @@ img {
     text-align: center;
 }
 
+.hero-content-mobile {
+    display: none;
+}
+
+.hero-content-mobile h1 {
+    text-transform: uppercase;
+}
+
+.hero-content-mobile p {
+    text-align: center;
+}
+
+
 /*Services CSS*/
 .services {
     display: flex;
@@ -93,7 +106,7 @@ img {
 
 .fixed-image {
     display: flex;
-    min-height: 600px;
+    min-height: 700px;
     margin: 0 auto;
 }
 
@@ -129,8 +142,8 @@ img {
 
 .steps h3 {
     text-align: center;
-    color: blue;
-    background-color: blueviolet;
+    color: #afc7e2;
+    background-color: #dfeefd;
     padding: .5em 0em;
 }
 
@@ -141,7 +154,7 @@ img {
 .steps p {
     text-align: left;
     line-height: 1.6;
-    background-color: blueviolet;
+    background-color: #dfeefd;
     padding: 1em 1em;
     min-height: 200px;
 }
@@ -196,4 +209,67 @@ img {
     color: #fff;
     padding: 1em 2em;
     background-color: #000000;
+}
+
+/*Media Query*/
+
+@media (max-width:950px) {
+
+    .hero {
+        background-position: left center;
+    }
+
+    .hero-content h1, .hero-content p {
+        display: none;
+    }
+
+    .hero-content-mobile {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .hero-content-mobile h1 {
+        padding: .5em 0em;
+    }
+
+
+    .steps {
+        flex: 1 1 100%;
+        padding: 3em 8em;
+    }
+    
+    .fixed-image {
+        min-height: 800px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .services-left {
+        min-height: 300px;
+    }
+
+    .fixed-image {
+        flex-direction: column;
+    }
+
+    .steps-container {
+        flex-direction: column;
+    }
+
+    .product-cta {
+        flex-basis: 50%;
+    }
+
+    .products {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:575px) {
+
+    .steps {
+        padding: 1.5em 3em;
+    }
 }
